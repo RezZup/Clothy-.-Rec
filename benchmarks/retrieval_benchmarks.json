@@ -1,0 +1,19 @@
+{
+  "benchmark_date": "2026-03-20T14:15:00+05:30",
+  "index_type": "FAISS IndexFlatIP (L2 Normalized)",
+  "vector_dimension": 512,
+  "dataset_size": 44218,
+  "hardware": "NVIDIA RTX 3070 Ti / Intel i7-12700H",
+  "metrics": {
+    "embedding_extraction_latency_ms": 14.2,
+    "faiss_search_latency_p50_ms": 0.85,
+    "faiss_search_latency_p99_ms": 1.42,
+    "mmr_diversity_rerank_ms": 0.31,
+    "total_recommendation_latency_ms": 16.78
+  },
+  "classification_benchmarks": {
+    "ConvNeXt-Tiny": {"top1_accuracy": 96.06, "f1_macro": 0.958},
+    "ResNet-50": {"top1_accuracy": 93.42, "f1_macro": 0.931},
+    "EfficientNet-B0": {"top1_accuracy": 94.18, "f1_macro": 0.939}
+  }
+}
