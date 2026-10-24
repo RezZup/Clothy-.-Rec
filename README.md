@@ -2,6 +2,9 @@
 
 ClothyRec is a full‑stack AI fashion assistant that blends local computer vision with Gemini-powered reasoning and prompt optimization. It analyzes garments or full‑body photos, recommends matching outfits, extracts skin tone palettes, and can generate styled looks from a reference image and a refined prompt.
 
+**Repository:** https://github.com/RezZup/Atelier-ClothyRec
+**Author:** Gaurav Rajbhar (RezZup)
+
 ---
 
 ## ✨ Key Features

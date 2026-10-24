@@ -71,10 +71,10 @@ def load_prompt_library() -> Dict[str, List[Dict[str, str]]]:
         key=_image_sort_key,
     )
 
-    for i, prompt in enumerate(prompts):
-        image_url = ""
-        if i < len(image_files):
-            image_url = f"/static/prompts/{image_files[i].name}"
-        prompt["image_url"] = image_url
+    max_count = min(len(prompts), len(image_files))
+    trimmed_prompts = prompts[:max_count]
 
-    return {"prompts": prompts}
+    for i, prompt in enumerate(trimmed_prompts):
+        prompt["image_url"] = f"/static/prompts/{image_files[i].name}"
+
+    return {"prompts": trimmed_prompts}
